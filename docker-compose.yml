@@ -23,7 +23,7 @@ services:
       - redis
       - db
   jasmin-celery:
-    image: tarekaec/jasmin_web_panel:latest
+    image: tarekaec/jasmin_web_panel:1.3
     entrypoint: bash ./docker-entrypoint-celery.sh
     deploy:
       replicas: 1
